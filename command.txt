@@ -1,0 +1,20 @@
+express --no-view service-media
+
+npm install
+
+//cek command yang tersedia
+npx sequelize
+
+//init sequelize
+npx sequelize init
+
+npx sequelize migration:create --name=create-table-media.js
+
+//harus install package ini terlebih dahulu sebelum db:migrate
+npm install mysql2 --save
+
+//jalankan migrasi
+npx sequelize db:migrate
+
+//undo migrasi
+npx sequelize db:migrate:undo
