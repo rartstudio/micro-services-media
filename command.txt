@@ -24,3 +24,7 @@ npm install -g nodemon
 
 //menjalankan autoreload nodemon
 nodemon bin/www
+
+//menambah 2 package untuk mengecek base64 img dan image base64
+npm install base64-img
+npm install is-base64
