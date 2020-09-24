@@ -18,3 +18,9 @@ npx sequelize db:migrate
 
 //undo migrasi
 npx sequelize db:migrate:undo
+
+//install nodemon untuk auto reload ketika file berubah
+npm install -g nodemon
+
+//menjalankan autoreload nodemon
+nodemon bin/www
