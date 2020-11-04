@@ -2,6 +2,10 @@ express --no-view service-media
 
 npm install
 
+npm install dotenv
+
+npm install sequelize sequelize-cli
+
 //cek command yang tersedia
 npx sequelize
 
@@ -19,6 +23,21 @@ npx sequelize db:migrate
 //undo migrasi
 npx sequelize db:migrate:undo
 
+//undo all migration
+npx sequelize db:migrate:undo:all
+
+//create seeders
+npx sequelize seed:create --name=user-seeders
+
+//run seeders
+npx sequelize db:seed:all
+
+//undo seeders
+npx sequelize db:seed:undo:all
+
+//install package fastest validator
+npm install fastest-validator --save
+
 //install nodemon untuk auto reload ketika file berubah
 npm install -g nodemon
 
@@ -28,3 +47,6 @@ nodemon bin/www
 //menambah 2 package untuk mengecek base64 img dan image base64
 npm install base64-img
 npm install is-base64
+
+//install jsonwebtoken di gateway
+npm install jsonwebtoken --save
